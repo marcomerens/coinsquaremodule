@@ -1,0 +1,31 @@
+
+<div>
+	<table>
+	<thead>
+		<tr>
+			<th>Currency</th>
+			<th>{{base}}</th>
+			<th></th>
+		</tr>
+	</thead>
+		<tbody>
+		{% for currency in currencies %}
+		{% if quotes %}
+		{% if quotes[currency] %}
+		<tr>
+			<td>{{currency}}</td>
+			<td>{{quotes[currency].value}}</td>
+			<td>
+			{% if quotes[currency].ret_24h_pc > 0 %}
+			+
+			{% endif %}
+
+				{{quotes[currency].ret_24h_pc}}%
+			</td>
+		</tr>
+		{% endif %}		
+		{% endif %}	
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
