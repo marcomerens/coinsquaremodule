@@ -46,12 +46,10 @@ modules: [
       <td>This is the currency you want the crypto currencies to be displayed in. Can be USD, CAD, EUR or GPB.
       </td>
     </tr>
-    
     <tr>
       <td><code>currencies</code></td>
       <td>This is an array of the crypto currencies you want to display. Can be BTC, ETH, DOGE, BAB, LTC, DASH, XLM. The order of the array is the order the will be displayed.
       </td>
     </tr>
-
   </tbody>
 </table>
